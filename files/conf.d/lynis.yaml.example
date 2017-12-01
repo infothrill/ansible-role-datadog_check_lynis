@@ -1,0 +1,11 @@
+init_config: null
+
+# by default you will get all metrics if configured like this:
+# instances: [{}]
+
+# I prefer being explicit about submitting some that I am interested in:
+instances:
+  - metrics:
+      - hardening_index
+#    tags:
+#      - fubar
