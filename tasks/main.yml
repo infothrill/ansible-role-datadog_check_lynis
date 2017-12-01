@@ -1,25 +1,25 @@
 ---
 # tasks for datadog-check-lynis
-- name: "give dd-agent access to 'nsd-control stats' via sudo"
-  template:
-    src: templates/sudoers.d/datadog_nsd
-    dest: /etc/sudoers.d/datadog_nsd
-    owner: root
-    group: root
-    mode: 440
+#- name: "give dd-agent access to 'nsd-control stats' via sudo"
+#  template:
+#    src: templates/sudoers.d/datadog_nsd
+#    dest: /etc/sudoers.d/datadog_nsd
+#    owner: root
+#    group: root
+#    mode: 440
 
-- name: "copy nsd check"
+- name: "copy lynis check"
   copy:
-    src: "files/checks.d/nsd.py"
-    dest: "/etc/dd-agent/checks.d/nsd.py"
+    src: "files/checks.d/lynis.py"
+    dest: "/etc/dd-agent/checks.d/lynis.py"
     owner: "{{ ddagent_user }}"
     group: "{{ ddagent_group }}"
     mode: 0640
 
 - name: copy check example configuration
   copy:
-    src: "files/conf.d/nsd.yaml.example"
-    dest: "/etc/dd-agent/conf.d/nsd.yaml.example"
+    src: "files/conf.d/lynis.yaml.example"
+    dest: "/etc/dd-agent/conf.d/lynis.yaml.example"
     owner: "{{ ddagent_user }}"
     group: "{{ ddagent_group }}"
     mode: 0640
