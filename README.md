@@ -50,7 +50,7 @@ The recommended approach would be to:
 
 ## License
 
-MIT / BSD
+MIT
 
 ## Author Information
 
