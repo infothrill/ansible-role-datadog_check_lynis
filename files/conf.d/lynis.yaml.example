@@ -7,6 +7,8 @@ init_config: null
 instances:
   - metrics:
       - hardening_index
+      - installed_packages
+      - lynis_tests_done
     report: /var/log/lynis/report.dat
 #    tags:
 #      - fubar

@@ -27,9 +27,14 @@ Playbook:
 To configure the check, please use the Datadog.datadog role and add an entry
 in the `checks` dictionary there:
 
-	  nsd:
+	  lynis:
 	    init_config:
-	    instances: [{}]
+	    instances:
+          - metrics:
+		      - hardening_index
+		      - installed_packages
+		      - lynis_tests_done
+		    report: /var/log/lynis/report.dat
 
 ## Role Variables
 
@@ -58,6 +63,10 @@ This role was created in 2017 by Paul Kremer.
 
 
 ## Changes
+
+### v1.0.1
+
+* remove unused files and outcommented code
 
 ### v1.0
 

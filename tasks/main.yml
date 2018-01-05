@@ -1,12 +1,5 @@
 ---
 # tasks for datadog-check-lynis
-#- name: "give dd-agent access to 'nsd-control stats' via sudo"
-#  template:
-#    src: templates/sudoers.d/datadog_nsd
-#    dest: /etc/sudoers.d/datadog_nsd
-#    owner: root
-#    group: root
-#    mode: 440
 
 - name: "copy lynis check"
   copy:
