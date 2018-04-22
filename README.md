@@ -9,7 +9,7 @@ An [Ansible](http://www.ansible.com) role to install a
 requirements.yml:
 
 	- src: Datadog.datadog
-	  version: 1.4.0
+	  version: 1.6.1
 	- src: infothrill.datadog-check-lynis
 	  version: v1.0
 
@@ -63,6 +63,11 @@ This role was created in 2017 by Paul Kremer.
 
 
 ## Changes
+
+### v1.0.2
+
+* remove ansible 2.1 and add ansible 2.5
+* upgrade molecule
 
 ### v1.0.1
 
