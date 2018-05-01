@@ -64,6 +64,11 @@ This role was created in 2017 by Paul Kremer.
 
 ## Changes
 
+### v1.0.3
+
+* Upgrade molecule
+* Fix meta/main.yml to reflect correct values
+
 ### v1.0.2
 
 * remove ansible 2.1 and add ansible 2.5
