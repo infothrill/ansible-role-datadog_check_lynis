@@ -1,5 +1,11 @@
 # Ansible role datadog-check-lynis
 
+[![Build Status](https://img.shields.io/travis/infothrill/ansible-role-datadog-check-lynis/master.svg?label=travis_master)](https://travis-ci.org/infothrill/ansible-role-datadog-check-lynis)
+[![Build Status](https://img.shields.io/travis/infothrill/ansible-role-datadog-check-lynis/develop.svg?label=travis_develop)](https://travis-ci.org/infothrill/ansible-role-datadog-check-lynis)
+[![Updates](https://pyup.io/repos/github/infothrill/ansible-role-datadog-check-lynis/shield.svg)](https://pyup.io/repos/github/infothrill/ansible-role-datadog-check-lynis/)
+[![Ansible Role](https://img.shields.io/ansible/role/22962.svg)](https://galaxy.ansible.com/infothrill/datadog-check-lynis/)
+
+
 An [Ansible](http://www.ansible.com) role to install a
 [Datadog](https://www.datadoghq.com) agent check for
 [Lynis](https://cisofy.com/lynis/), an open source security auditing tool.
