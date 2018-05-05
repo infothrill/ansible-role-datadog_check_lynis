@@ -1,10 +1,23 @@
 ---
 # tasks for datadog-check-lynis
+- name: Set default datadog agent config dir
+  set_fact:
+    _ddagent_config_dir: "/etc/dd-agent"
+
+- name: Detect datadog agent 6 config dir
+  stat:
+    path: /etc/datadog-agent
+  register: _ddagent_etc_dir
+
+- name: Set default datadog agent config dir
+  set_fact:
+    _ddagent_config_dir: "/etc/datadog-agent"
+  when: _ddagent_etc_dir.stat.isdir is defined and _ddagent_etc_dir.stat.isdir
 
 - name: "copy lynis check"
   copy:
     src: "files/checks.d/lynis.py"
-    dest: "{{ ddagent_config_dir }}/checks.d/lynis.py"
+    dest: "{{ _ddagent_config_dir }}/checks.d/lynis.py"
     owner: "{{ ddagent_user }}"
     group: "{{ ddagent_group }}"
     mode: 0640
@@ -12,7 +25,7 @@
 - name: copy check example configuration
   copy:
     src: "files/conf.d/lynis.yaml.example"
-    dest: "{{ ddagent_config_dir }}/conf.d/lynis.yaml.example"
+    dest: "{{ _ddagent_config_dir }}/conf.d/lynis.yaml.example"
     owner: "{{ ddagent_user }}"
     group: "{{ ddagent_group }}"
     mode: 0640

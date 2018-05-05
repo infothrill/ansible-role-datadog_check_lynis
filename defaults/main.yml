@@ -3,5 +3,3 @@
 
 ddagent_user: "dd-agent"
 ddagent_group: "dd-agent"
-ddagent_config_dir: "/etc/dd-agent"
-# ddagent_config_dir: "/etc/datadog-agent"  # agent 6

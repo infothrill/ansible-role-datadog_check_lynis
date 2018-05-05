@@ -48,7 +48,6 @@ in the `checks` dictionary there:
 |:--------------------------:|:--------:|:----------------|
 | ddagent_user               | dd-agent | agent user      |
 | ddagent_group              | dd-agent | agent group     |
-| ddagent_config_dir         | /etc/dd-agent | location of configs for the agent |
 
 ## Dependencies
 
@@ -73,7 +72,7 @@ This role was created in 2017 by Paul Kremer.
 
 ### v1.1.0
 
-* Add new role variable `ddagent_config_dir` (backwards compatible)
+* Auto-detect agent5/6 configuration directory (backwards compatible)
 * Add support for EL 6,7
 * Optimize molecule test
 
