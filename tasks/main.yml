@@ -4,7 +4,7 @@
 - name: "copy lynis check"
   copy:
     src: "files/checks.d/lynis.py"
-    dest: "/etc/dd-agent/checks.d/lynis.py"
+    dest: "{{ ddagent_config_dir }}/checks.d/lynis.py"
     owner: "{{ ddagent_user }}"
     group: "{{ ddagent_group }}"
     mode: 0640
@@ -12,7 +12,7 @@
 - name: copy check example configuration
   copy:
     src: "files/conf.d/lynis.yaml.example"
-    dest: "/etc/dd-agent/conf.d/lynis.yaml.example"
+    dest: "{{ ddagent_config_dir }}/conf.d/lynis.yaml.example"
     owner: "{{ ddagent_user }}"
     group: "{{ ddagent_group }}"
     mode: 0640

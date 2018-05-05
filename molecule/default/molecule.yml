@@ -18,6 +18,10 @@ platforms:
     image: debian:stretch
   - name: datadog-lynis-debian-jessie
     image: debian:jessie
+  - name: datadog-lynis-centos-7
+    image: centos:7
+  - name: datadog-lynis-centos-6
+    image: centos:6
 provisioner:
   name: ansible
   lint:
