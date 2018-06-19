@@ -70,6 +70,10 @@ This role was created in 2017 by Paul Kremer.
 
 ## Changes
 
+### v1.1.x
+
+* drop support for ansible EOL versions 2.2, 2.3
+
 ### v1.1.0
 
 * Auto-detect agent5/6 configuration directory (backwards compatible)
