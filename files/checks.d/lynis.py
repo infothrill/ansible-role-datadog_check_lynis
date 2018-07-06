@@ -9,9 +9,11 @@ from checks import AgentCheck
 
 METRIC_PREFIX = "lynis."
 
+
 class LynisCheck(AgentCheck):
 
     KNOWN_METRICS = ("hardening_index", "lynis_tests_done", "installed_packages")
+
     def get_metrics_from_report(self, report):
         metrics = []
         with open(report, "r") as f:
