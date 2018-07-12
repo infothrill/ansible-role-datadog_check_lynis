@@ -24,4 +24,5 @@ galaxy_info:
     - metrics
     - hardening
     - audit
+    - security
   dependencies: []
