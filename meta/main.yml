@@ -25,4 +25,5 @@ galaxy_info:
     - hardening
     - audit
     - security
+    - monitoring
   dependencies: []
