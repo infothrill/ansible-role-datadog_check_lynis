@@ -73,6 +73,7 @@ This role was created in 2017 by Paul Kremer.
 ### v1.1.x
 
 * drop support for ansible EOL versions 2.2, 2.3
+* add testing support for ansible 2.8
 
 ### v1.1.0
 
