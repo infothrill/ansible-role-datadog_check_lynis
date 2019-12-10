@@ -70,10 +70,14 @@ This role was created in 2017 by Paul Kremer.
 
 ## Changes
 
-### v1.1.x
+### v2.0.0
 
-* drop support for ansible EOL versions 2.2, 2.3
-* add testing support for ansible 2.8
+* Add support for ansible 2.6, 2.7, 2.8, 2.9
+* Drop support for ansible EOL versions 2.2, 2.3, 2.4
+* Drop support for python2
+* Drop support for EL6 , ubuntu trusty 14.04
+* Add testing support for ansible 2.8
+* Upgrade ansible-lint, molecule and docker dependencies for testing
 
 ### v1.1.0
 

@@ -8,20 +8,18 @@ driver:
 lint:
   name: yamllint
 platforms:
-  - name: datadog-lynis-ubuntu-1404
-    image: ubuntu:14.04
   - name: datadog-lynis-ubuntu-1604
     image: ubuntu:16.04
   - name: datadog-lynis-ubuntu-1804
     image: ubuntu:18.04
+  - name: datadog-lynis-debian-buster
+    image: debian:buster
   - name: datadog-lynis-debian-stretch
     image: debian:stretch
   - name: datadog-lynis-debian-jessie
     image: debian:jessie
   - name: datadog-lynis-centos-7
     image: centos:7
-  - name: datadog-lynis-centos-6
-    image: centos:6
 provisioner:
   name: ansible
   lint:
