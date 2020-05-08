@@ -15,7 +15,7 @@ An [Ansible](http://www.ansible.com) role to install a
 requirements.yml:
 
 	- src: Datadog.datadog
-	  version: 1.6.1
+	  version: 4.2.1
 	- src: infothrill.datadog-check-lynis
 	  version: v1.1.0
 
@@ -69,6 +69,12 @@ This role was created in 2017 by Paul Kremer.
 
 
 ## Changes
+
+### vx.x.x
+
+* Add support for agent `> 6` (python 3+), and drop support for older versions
+* Drop Centos / EL7
+* Add test for Ubuntu focal (20.04)
 
 ### v2.0.0
 

@@ -10,14 +10,12 @@ galaxy_info:
       versions:
         - xenial
         - bionic
+        - focal
     - name: Debian
       versions:
         - jessie
         - stretch
         - buster
-    - name: EL
-      versions:
-        - 7
   galaxy_tags:
     - lynis
     - datadog

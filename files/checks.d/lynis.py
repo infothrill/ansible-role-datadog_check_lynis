@@ -5,7 +5,7 @@ Datadog check for Lynis (https://cisofy.com/lynis/)
 This will query the Lynis report for numeral data and feed it into datadog.
 """
 
-from checks import AgentCheck
+from datadog_checks.base.checks import AgentCheck
 
 METRIC_PREFIX = "lynis."
 
@@ -50,8 +50,8 @@ class LynisCheck(AgentCheck):
 if __name__ == '__main__':
     check, instances = LynisCheck.from_yaml('/etc/dd-agent/conf.d/lynis.yaml')
     for instance in instances:
-        print "\nRunning the check with: %r" % (instance)
+        print("\nRunning the check with: %r" % (instance))
         check.check(instance)
         if check.has_events():
-            print 'Events: %s' % (check.get_events())
-        print 'Metrics: %s' % (check.get_metrics())
+            print('Events: %s' % (check.get_events()))
+        print('Metrics: %s' % (check.get_metrics()))
