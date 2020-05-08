@@ -17,7 +17,7 @@ requirements.yml:
 	- src: Datadog.datadog
 	  version: 4.2.1
 	- src: infothrill.datadog-check-lynis
-	  version: v1.1.0
+	  version: v3.0.0
 
 Install:
 
@@ -70,7 +70,7 @@ This role was created in 2017 by Paul Kremer.
 
 ## Changes
 
-### vx.x.x
+### v3.0.0
 
 * Add support for agent `> 6` (python 3+), and drop support for older versions
 * Drop Centos / EL7
