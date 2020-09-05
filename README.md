@@ -73,6 +73,7 @@ This role was created in 2017 by Paul Kremer.
 ### v4.0.0
 
 * Renamed role to `datadog_check_lynis`
+* Drop support for ansible EOL versions 2.5, 2.6, 2.7
 
 ### v3.0.0
 
