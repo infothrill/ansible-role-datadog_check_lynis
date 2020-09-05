@@ -1,9 +1,9 @@
-# Ansible role datadog-check-lynis
+# Ansible role datadog_check_lynis
 
-[![Build Status](https://img.shields.io/travis/infothrill/ansible-role-datadog-check-lynis/master.svg?label=travis_master)](https://travis-ci.org/infothrill/ansible-role-datadog-check-lynis)
-[![Build Status](https://img.shields.io/travis/infothrill/ansible-role-datadog-check-lynis/develop.svg?label=travis_develop)](https://travis-ci.org/infothrill/ansible-role-datadog-check-lynis)
-[![Updates](https://pyup.io/repos/github/infothrill/ansible-role-datadog-check-lynis/shield.svg)](https://pyup.io/repos/github/infothrill/ansible-role-datadog-check-lynis/)
-[![Ansible Role](https://img.shields.io/ansible/role/22962.svg)](https://galaxy.ansible.com/infothrill/datadog-check-lynis/)
+[![Build Status](https://img.shields.io/travis/infothrill/ansible-role-datadog_check_lynis/master.svg?label=travis_master)](https://travis-ci.org/infothrill/ansible-role-datadog_check_lynis)
+[![Build Status](https://img.shields.io/travis/infothrill/ansible-role-datadog_check_lynis/develop.svg?label=travis_develop)](https://travis-ci.org/infothrill/ansible-role-datadog_check_lynis)
+[![Updates](https://pyup.io/repos/github/infothrill/ansible-role-datadog_check_lynis/shield.svg)](https://pyup.io/repos/github/infothrill/ansible-role-datadog_check_lynis/)
+[![Ansible Role](https://img.shields.io/ansible/role/22962.svg)](https://galaxy.ansible.com/infothrill/datadog_check_lynis/)
 
 
 An [Ansible](http://www.ansible.com) role to install a
@@ -16,7 +16,7 @@ requirements.yml:
 
 	- src: Datadog.datadog
 	  version: 4.2.1
-	- src: infothrill.datadog-check-lynis
+	- src: infothrill.datadog_check_lynis
 	  version: v3.0.0
 
 Install:
@@ -28,7 +28,7 @@ Playbook:
     - hosts: servers
         roles:
 		    - role: Datadog.datadog
-		    - role: ansible-role-datadog-check-lynis
+		    - role: ansible-role-datadog_check_lynis
 
 To configure the check, please use the Datadog.datadog role and add an entry
 in the `checks` dictionary there:
@@ -69,6 +69,10 @@ This role was created in 2017 by Paul Kremer.
 
 
 ## Changes
+
+### v4.0.0
+
+* Renamed role to `datadog_check_lynis`
 
 ### v3.0.0
 

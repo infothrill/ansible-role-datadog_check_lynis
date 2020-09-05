@@ -1,5 +1,5 @@
 ---
-# tasks for datadog-check-lynis
+# tasks for datadog_check_lynis
 - name: Set default datadog agent config dir
   set_fact:
     _ddagent_config_dir: "/etc/dd-agent"
