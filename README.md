@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/travis/infothrill/ansible-role-datadog_check_lynis/master.svg?label=travis_master)](https://travis-ci.org/infothrill/ansible-role-datadog_check_lynis)
 [![Build Status](https://img.shields.io/travis/infothrill/ansible-role-datadog_check_lynis/develop.svg?label=travis_develop)](https://travis-ci.org/infothrill/ansible-role-datadog_check_lynis)
 [![Updates](https://pyup.io/repos/github/infothrill/ansible-role-datadog_check_lynis/shield.svg)](https://pyup.io/repos/github/infothrill/ansible-role-datadog_check_lynis/)
-[![Ansible Role](https://img.shields.io/ansible/role/22962.svg)](https://galaxy.ansible.com/infothrill/datadog_check_lynis/)
+[![Ansible Role](https://img.shields.io/ansible/role/50606.svg)](https://galaxy.ansible.com/infothrill/datadog_check_lynis/)
 
 
 An [Ansible](http://www.ansible.com) role to install a
