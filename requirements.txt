@@ -1,4 +1,5 @@
 molecule==3.2.3
+molecule-docker==0.3.3
 ansible-lint==4.3.7
 # needed in this case because we run tests with docker containers:
 docker==4.4.0
