@@ -70,6 +70,12 @@ This role was created in 2017 by Paul Kremer.
 
 ## Changes
 
+### v4.0.1
+
+* Drop python 3.6 test support
+* Add python 3.7, 3.8, 3.9 test support
+* Upgrade molecule to 3.x
+
 ### v4.0.0
 
 * Renamed role to `datadog_check_lynis`
