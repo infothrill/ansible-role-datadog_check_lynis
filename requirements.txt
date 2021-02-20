@@ -2,3 +2,5 @@ molecule==3.2.3
 ansible-lint==4.3.7
 # needed in this case because we run tests with docker containers:
 docker==4.4.0
+# molecule does not depend explicitly on testinfra anymore:
+testinfra>=3.0.4
