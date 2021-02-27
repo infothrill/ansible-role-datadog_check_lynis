@@ -75,6 +75,8 @@ This role was created in 2017 by Paul Kremer.
 * Drop python 3.6 test support
 * Add python 3.7, 3.8, 3.9 test support
 * Upgrade molecule to 3.x
+* Drop ansible 2.8 support
+* Add ansible 2.10, 3.0 support
 
 ### v4.0.0
 
